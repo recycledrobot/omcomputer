@@ -1,0 +1,55 @@
+.is-0 {
+  font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+  .is-0 {
+    font-size: 3rem;
+  }
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+.video-player {
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#playlist {
+  list-style: none;
+  padding: 0;
+}
+
+#playlist li {
+  cursor: pointer;
+}
+
+.playlist-item {
+  display: block;
+  padding: 10px;
+  margin: 5px 0;
+  background: #f5f5f5;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.playlist-item:hover {
+  background: #ddd;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: black;
+}
