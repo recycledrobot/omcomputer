@@ -46,7 +46,7 @@
       </div>
   </section>
 
-  <section class="section is-medium">
+  <section class="section is-medium py-2">
       <div class="container">
 
           <form id="dataForm" enctype="multipart/form-data">

@@ -44,98 +44,99 @@
       </div>
   </section>
 
-  <section class="section is-medium">
+  <section class="section is-medium py-2">
     <div class="container">
 
-      <div class="content pb-6">
+      <div class="content pb-2">
         <h1 class="title is-4 has-text-centered">
           Computer maintenance is essential for ensuring optimal performance, longevity, and security of your system. Here are some key aspects to consider:
         </h1>
       </div>
+      <diV class= "py-0">
 
-      <div class="box">
-        <div class="content">
-          <p class="title is-4">1. Regular Updates</p>
-          <p class="">
-            Operating System: Keep your OS up to date to protect against vulnerabilities.
-            Software Applications: Update applications regularly to benefit from new features and security patches.
-            Drivers: Ensure hardware drivers are current for optimal performance.
-          </p>
+        <div class="box">
+          <div class="content">
+            <p class="title is-4">1. Regular Updates</p>
+            <p class="">
+              Operating System: Keep your OS up to date to protect against vulnerabilities.
+              Software Applications: Update applications regularly to benefit from new features and security patches.
+              Drivers: Ensure hardware drivers are current for optimal performance.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="box">
-        <div class="content">
-          <p class="title is-4">2. Antivirus and Security</p>
-          <p class="">
-            Install Antivirus Software: Use reputable antivirus programs to detect and remove malware.
-            Firewall: Enable a firewall to protect against unauthorized access.
-            Regular Scans: Schedule routine scans to catch any threats early.
-          </p>
+        <div class="box">
+          <div class="content">
+            <p class="title is-4">2. Antivirus and Security</p>
+            <p class="">
+              Install Antivirus Software: Use reputable antivirus programs to detect and remove malware.
+              Firewall: Enable a firewall to protect against unauthorized access.
+              Regular Scans: Schedule routine scans to catch any threats early.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="box">
-        <div class="content">
-          <p class="title is-4">3. Data Backup</p>
-          <p class="">
-            Regular Backups: Use external drives or cloud services to back up important files.
-            System Images: Consider creating a system image for a complete restore if necessary.
-          </p>
+        <div class="box">
+          <div class="content">
+            <p class="title is-4">3. Data Backup</p>
+            <p class="">
+              Regular Backups: Use external drives or cloud services to back up important files.
+              System Images: Consider creating a system image for a complete restore if necessary.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="box">
-        <div class="content">
-          <p class="title is-4">4. Disk Maintenance</p>
-          <p class="">
-            Disk Cleanup: Use built-in tools to remove temporary files and free up space.
-            Defragmentation: For HDDs, defragment periodically (not needed for SSDs).
-            Check Disk: Use tools to check for disk errors and repair them.
-          </p>
+        <div class="box">
+          <div class="content">
+            <p class="title is-4">4. Disk Maintenance</p>
+            <p class="">
+              Disk Cleanup: Use built-in tools to remove temporary files and free up space.
+              Defragmentation: For HDDs, defragment periodically (not needed for SSDs).
+              Check Disk: Use tools to check for disk errors and repair them.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="box">
-        <div class="content">
-          <p class="title is-4">5. Physical Maintenance</p>
-          <p class="">
-            Dusting: Clean the interior and exterior of your computer to prevent overheating.
-            Cable Management: Organize cables to improve airflow and reduce clutter.
-            Cooling: Ensure fans are functioning and replace them if necessary.
-          </p>
+        <div class="box">
+          <div class="content">
+            <p class="title is-4">5. Physical Maintenance</p>
+            <p class="">
+              Dusting: Clean the interior and exterior of your computer to prevent overheating.
+              Cable Management: Organize cables to improve airflow and reduce clutter.
+              Cooling: Ensure fans are functioning and replace them if necessary.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="box">
-        <div class="content">
-          <p class="title is-4">6. Performance Monitoring</p>
-          <p class="">
-            Task Manager/Activity Monitor: Monitor resource usage to identify problematic applications.
-            System Resources: Keep an eye on RAM and CPU usage to detect potential bottlenecks.
-          </p>
+        <div class="box">
+          <div class="content">
+            <p class="title is-4">6. Performance Monitoring</p>
+            <p class="">
+              Task Manager/Activity Monitor: Monitor resource usage to identify problematic applications.
+              System Resources: Keep an eye on RAM and CPU usage to detect potential bottlenecks.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="box">
-        <div class="content">
-          <p class="title is-4">7. Uninstall Unused Programs</p>
-          <p class="">
-            Remove Bloatware: Uninstall software you no longer use to free up space and resources.
-          </p>
+        <div class="box">
+          <div class="content">
+            <p class="title is-4">7. Uninstall Unused Programs</p>
+            <p class="">
+              Remove Bloatware: Uninstall software you no longer use to free up space and resources.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="box">
-        <div class="content">
-          <p class="title is-4">8. User Management</p>
-          <p class="">
-            Manage User Accounts: Ensure proper permissions and remove unused accounts.
-            Password Management: Use strong, unique passwords and consider a password manager.
-          </p>
+        <div class="box">
+          <div class="content">
+            <p class="title is-4">8. User Management</p>
+            <p class="">
+              Manage User Accounts: Ensure proper permissions and remove unused accounts.
+              Password Management: Use strong, unique passwords and consider a password manager.
+            </p>
+          </div>
         </div>
-      </div>
-
+      </div>      
     </div>
   </section>
 

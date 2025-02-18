@@ -44,14 +44,14 @@
       </div>
   </section>
 
-  <section class="section is-medium  ">
-      <div class="container ">
-        <div class="box">
-          <h1 class="title ">Videos Worked</h1>
+  <section class="section is-medium py-2 ">
+      <div class="container  ">
+        <div class="box has-background-black ">
+          <h1 class="title has-text-white ">Videos Worked</h1>
 
-          <div class="columns">
+          <div class="columns ">
               <div class="column is-two-thirds">
-                  <h2 id="videoTitle" class="subtitle ">Gai Ghat Dham</h2>
+                  <h2 id="videoTitle" class="subtitle has-text-white ">Gai Ghat Dham</h2>
                   <div class="video-container">
                       <video id="videoPlayer" controls class="video-player">
                           <source src="vid/gai.mp4" type="video/mp4">
@@ -61,11 +61,11 @@
               </div>
 
               <div class="column">
-                  <h2 class="subtitle">Playlist</h2>
+                  <h2 class="subtitle has-text-white">Videos</h2>
                   <ul id="playlist" class="box">
-                      <li><span data-src="vid/gai.mp4" data-title="Video 1" class="playlist-item">Gai Ghat Dham</span></li>
-                      <li><span data-src="videos/2.mp4" data-title="Video 2" class="playlist-item">Video 2</span></li>
-                      <li><span data-src="videos/3.mp4" data-title="Video 3" class="playlist-item">Video 3</span></li>
+                      <li><span data-src="vid/gai.mp4" data-title="Gai Ghat Dham" class="playlist-item">Gai Ghat Dham</span></li>
+                      <li><span data-src="vid/gai.mp4" data-title="Video 2" class="playlist-item">Video 2</span></li>
+                      <li><span data-src="vid/gai.mp4" data-title="Video 3" class="playlist-item">Video 3</span></li>
                   </ul>
               </div>
           </div>

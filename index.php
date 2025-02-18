@@ -44,31 +44,42 @@
       </div>
   </section>
 
-  <section class="section is-medium">
+  <section class="section is-medium py-2">
     <div class="container">
       <div class="columns is-multiline is-vcentered">
 
         <div class="column is-4">
           <div class="box">
-            <img src="/img/rep3.jpg" class="img" alt="">
-          </div>
-        </div>
-
-        <div class="column is-8">
-          <div class="box">
             <div class="content">
-              <p class="">Your one-stop solution for computer maintenance, sales, and complete IT services. We’re dedicated to keeping your technology running smoothly while providing top-quality products to meet your needs. At Om Computer
-                Maintenance, we are passionate about technology and committed to delivering exceptional IT solutions.
-                With a team of experienced professionals, we offer personalized services that cater to both individual and business requirements.
-              </p>
+              <img src="/img/rep3.jpg" class="img" alt="">
             </div>
           </div>
         </div>
 
+        <div class="column is-8  " >
+          <div class="box">
+            <div class="content">
+              <h1 class="is-size-4 title">Why Us ?</h1>
+              <p class="py-4">Your one-stop solution for computer maintenance, sales, and complete IT services. We’re dedicated to keeping your technology running smoothly while providing top-quality products to meet your needs. At Om Computer
+              Maintenance, we are passionate about technology and committed to delivering exceptional IT solutions.
+              With a team of experienced professionals, we offer personalized services that cater to both individual and business requirements.
+              </p>
+          </div>
+            
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <section class ="section is-medium">
+    <div class="container">
+      <div class="columns is-multiline">
+
         <div class="column is-8 is-hidden-touch"> <!-- NOTICE THE HIDDEN CLASS -->
           <div class="box">
             <div class="content">
-              <p class="">Maintaining a computer is essential for ensuring its performance, longevity, and security. </p>
+              <h1 class="is-size-4 title">Important</h1>
+              <p class="py-0">Maintaining a computer is essential for ensuring its performance, longevity, and security. </p>
             </div>
           </div>
         </div>
@@ -79,14 +90,7 @@
           </div>
         </div>
 
-        <div class="column is-8 is-hidden-desktop">
-          <div class="box">
-            <div class="content">
-              <p class="">Maintaining a computer is essential for ensuring its performance, longevity, and security. </p>
-            </div>
-          </div>
-        </div>
-
+        
       </div>
     </div>
   </section>

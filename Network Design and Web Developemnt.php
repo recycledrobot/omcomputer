@@ -52,10 +52,10 @@
       
   </section>
 
-  <section class="section is-medium py-0 ">
-      <div class="container">
-        <div class="py-2">
-          <div class="tabs is-toggle">
+  <section class="section is-medium py-2 ">
+      <div class="container has-text-white">
+        
+          <div class="tabs is-boxed">
             <ul>
               <li class="is-active" data-target ="NetworkDesign">
                 <a>
@@ -65,7 +65,7 @@
                   <span>Network Design</span>
                 </a>
               </li>
-              <li data-target ="WebDevelopment" >
+              <li  data-target ="WebDevelopment" >
                 <a>
                   <span class="icon is-small"
                     ><i class="fas fa-music" aria-hidden="true"></i
@@ -76,29 +76,36 @@
               
             </ul>
           </div>
-        </div>
-      <div class="box" id ="NetworkDesign">
-        <h2 class="is-size-5 title">Why ? </h2>
-        <p>Network design is crucial for building efficient, secure, and scalable communication systems. It ensures optimal performance by minimizing latency and maximizing bandwidth, enabling seamless data flow. A well-designed network supports scalability, allowing for future growth without major overhauls. Reliability is enhanced through redundancy and failover mechanisms, reducing downtime and ensuring continuous operation. Security is a top priority, with robust measures like firewalls, encryption, and access controls protecting against cyber threats. Cost efficiency is achieved by optimizing resources and minimizing unnecessary expenses. Simplified management and maintenance are facilitated through clear documentation and logical layouts, making troubleshooting easier. Network design aligns with business goals, supporting critical applications and workflows while improving user experience. Compliance with industry standards and regulations is ensured, particularly in sectors like healthcare and finance. Additionally, disaster recovery and business continuity planning are integral, enabling quick recovery from disruptions. Key components include topology, hardware, software, protocols, and security measures. In summary, network design is the foundation of a reliable, secure, and efficient infrastructure, essential for modern organizations to thrive in a connected world.
+        
+          <div class="px-2" id ="tab-content">
+            <div id="NetworkDesign">
+              <h2 class="is-size-5 title">Why ? </h2>
+              <p>Network design is crucial for building efficient, secure, and scalable communication systems. It ensures optimal performance by minimizing latency and maximizing bandwidth, enabling seamless data flow. A well-designed network supports scalability, allowing for future growth without major overhauls. Reliability is enhanced through redundancy and failover mechanisms, reducing downtime and ensuring continuous operation. Security is a top priority, with robust measures like firewalls, encryption, and access controls protecting against cyber threats. Cost efficiency is achieved by optimizing resources and minimizing unnecessary expenses. Simplified management and maintenance are facilitated through clear documentation and logical layouts, making troubleshooting easier. Network design aligns with business goals, supporting critical applications and workflows while improving user experience. Compliance with industry standards and regulations is ensured, particularly in sectors like healthcare and finance. Additionally, disaster recovery and business continuity planning are integral, enabling quick recovery from disruptions. Key components include topology, hardware, software, protocols, and security measures. In summary, network design is the foundation of a reliable, secure, and efficient infrastructure, essential for modern organizations to thrive in a connected world.
+            </div>
+            
+            <div id="WebDevelopment" class="is-hidden">
+              <h2 class="is-size-5 title">What ? </h2>
+              <p>Web development is the process of creating, building, and maintaining websites and web applications. It encompasses a range of tasks, including web design, content creation, coding, and server management. Web development is divided into two main areas: front-end and back-end. Front-end development focuses on the user interface and experience, using technologies like HTML, CSS, and JavaScript to create visually appealing and interactive websites. Back-end development involves server-side programming, databases, and application logic, using languages like Python, PHP, Ruby, or Node.js to ensure functionality and data management.
+
+    Modern web development also emphasizes responsive design, ensuring websites work seamlessly across devices, and accessibility, making them usable for all individuals, including those with disabilities. Frameworks like React, Angular, and Vue.js streamline front-end development, while tools like Django, Laravel, and Express.js simplify back-end tasks.
+
+    Web developers must also prioritize security, protecting websites from vulnerabilities like SQL injection and cross-site scripting. Additionally, performance optimization is critical, ensuring fast load times and smooth user experiences.
+
+    With the rise of e-commerce, social media, and cloud-based applications, web development plays a vital role in shaping the digital landscape. It enables businesses to reach global audiences, provide online services, and innovate in an increasingly connected world.
+
+            </div>
+
+          
+          
+          
+
+          </div>
+        
+    
+      
+      
       </div>
-      <div class="box" id="WebDevelopment " >
-        <h2 class="is-size-5 title">What ? </h2>
-        <p>Web development is the process of creating, building, and maintaining websites and web applications. It encompasses a range of tasks, including web design, content creation, coding, and server management. Web development is divided into two main areas: front-end and back-end. Front-end development focuses on the user interface and experience, using technologies like HTML, CSS, and JavaScript to create visually appealing and interactive websites. Back-end development involves server-side programming, databases, and application logic, using languages like Python, PHP, Ruby, or Node.js to ensure functionality and data management.
-
-Modern web development also emphasizes responsive design, ensuring websites work seamlessly across devices, and accessibility, making them usable for all individuals, including those with disabilities. Frameworks like React, Angular, and Vue.js streamline front-end development, while tools like Django, Laravel, and Express.js simplify back-end tasks.
-
-Web developers must also prioritize security, protecting websites from vulnerabilities like SQL injection and cross-site scripting. Additionally, performance optimization is critical, ensuring fast load times and smooth user experiences.
-
-With the rise of e-commerce, social media, and cloud-based applications, web development plays a vital role in shaping the digital landscape. It enables businesses to reach global audiences, provide online services, and innovate in an increasingly connected world.
-
-
-      </div>
-      
-    </div>
-      
-      
-    </div>
-  </section>
+    </section>
   
   <footer class="footer has-background-black">
     <div class="content has-text-centered has-text-light mt-6">
@@ -115,3 +122,4 @@ With the rise of e-commerce, social media, and cloud-based applications, web dev
 </body>
 
 </html>
+ 

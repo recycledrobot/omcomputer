@@ -45,24 +45,32 @@
       </div>
   </section>
 
-  <section class="section is-medium">
+  <section class="section is-medium py-4">
+    
     <div class="container">
-        <div class="columns">
-            <div class="column">
-                About
-            </div>
-            <div class="column">
-                pic
-            </div>
-            <div class="column">
-                Cart
-            </div>
-            
-        </div>
+      <div class="box">
+        <div class="columns  has-background-black is-centered ">
+          
+            <div class="column-is-4">
+              <h1 class="is-size-4 title has-text-white">About</h1>
+              <h2 class="  is-size-5 subtitle has-text-white py-0">Branded</h2>
 
-     </div>
+            </div>
+            <div class="column-is-4 is centered">
+                <img src="/img/msi.png" alt="" >
+            </div>
+            <div class="column-is-4 has-text-white">
+              <div class="is-size-4 mb-4">Rs 25,000</div>
+              <p>Money return guarentee one month.</p>
+              <button class="button is-primary">Add To Cart</button>
+            </div>
+          
+        </div>
+      </div>
+    
+    </div>
   </section>
-  
+
   <footer class="footer has-background-black">
     <div class="content has-text-centered has-text-light mt-6">
       <p>&copy; Om Computer Maintenance</p>
