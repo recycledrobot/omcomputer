@@ -70,6 +70,11 @@
     
     </div>
   </section>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">hello</h1>
+    </div>
+  </section>
 
   <footer class="footer has-background-black">
     <div class="content has-text-centered has-text-light mt-6">

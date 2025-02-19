@@ -14,7 +14,7 @@
     <div id="navMenu" class="navbar-menu">
         <div class="navbar-end">
             <a href="/" class="navbar-item">Home</a>
-            <a href="/sales.php" class="navbar-item">Sales</a>
+            <a href="/omcomputer/sales.php" class="navbar-item">Sales</a>
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link" href="/maintenance.php">Maintenance & Troubleshooting</a>
                 <div class="navbar-dropdown">
