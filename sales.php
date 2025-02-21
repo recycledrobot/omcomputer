@@ -49,19 +49,21 @@
     
     <div class="container">
       <div class="box">
-        <div class="columns  has-background-black is-centered ">
+        <div class="columns  has-background-black is-vcentered is-centered ">
           
-            <div class="column-is-4">
-              <h1 class="is-size-4 title has-text-white">About</h1>
+            <div class="column-is-4 mx-4">
+              <h1 class="is-size-4 title has-text-white">MSI I5</h1>
               <h2 class="  is-size-5 subtitle has-text-white py-0">Branded</h2>
 
             </div>
-            <div class="column-is-4 is centered">
-                <img src="/img/msi.png" alt="" >
+            <div class="column-is-4 mx-4 ">
+                <img src="img\msi.png" alt="pci file" >
             </div>
             <div class="column-is-4 has-text-white">
-              <div class="is-size-4 mb-4">Rs 25,000</div>
+              <div class="is-size-4 mb-4">Rs 25,000
               <p>Money return guarentee one month.</p>
+
+              </div>
               <button class="button is-primary">Add To Cart</button>
             </div>
           
@@ -72,7 +74,7 @@
   </section>
   <section class="section">
     <div class="container">
-      <h1 class="title">hello</h1>
+      <h1 class="title">Nice to meet you.....</h1>
     </div>
   </section>
 
