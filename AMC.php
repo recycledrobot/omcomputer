@@ -19,19 +19,15 @@
   <meta name="twitter:description" content="OM Computer Maintenance offers top-notch IT support, repairs, and maintenance services for businesses and individuals. Reliable, affordable, and fast service.">
   <meta name="twitter:image" content="https://omcomputermaintenance.com.np/om.jpg">
 
-  <link rel="stylesheet" href="/omcomputer/css/bulma.min.css">
-  <link rel="stylesheet" href="/omcomputer/css/styles.css">
+  <link rel="stylesheet" href="/css/bulma.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 </head>
 
 <body class="has-navbar-fixed-top has-background-black-ter">
 
-  <?php include __DIR__ . "../partials/navbar.php"; ?>
+  <?php include __DIR__ . "/partials/navbar.php"; ?>
 
   <section class="hero is-black is-medium">
     <div class="hero-body">
@@ -44,27 +40,28 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
 
-  <section class="section is-medium py-2">
+  <section class="section">
       <div class="container">
 
           <form id="dataForm" enctype="multipart/form-data">
 
               <!-- Organization Name -->
               <div class="field">
-                <label class="label has-text-white">Organization Name</label>
+                <label class="label has-text-white">Organisation Name</label>
                 <div class="control has-icons-left">
-                  <input class="input" type="text" name="organization" placeholder="Organization Name">
+                  <input class="input" type="text" name="organisation" placeholder="Organisation Name">
                   <span class="icon is-small is-left">
-                    <i class="fas fa-building"></i>  <!-- Organization Name Icon -->
+                    <i class="fas fa-building"></i>  <!-- Organisation Name Icon -->
                   </span>
                 </div>
               </div>
               <div class="field">
                 <label class="label has-text-white">Pan/Vat No</label>
                 <div class="control">
-                  <input class="input" type="text" placeholder="Pan/Vat No">
+                  <input class="input" type="text" name="document_number" placeholder="Pan/Vat No">
                 </div>
               </div>
 
@@ -142,22 +139,17 @@
               </div>
 
           </form>
+
+          <div id="message-container"></div>
+
       </div>
   </section>
 
 
-  <footer class="footer has-background-black">
-    <div class="content has-text-centered has-text-light mt-6">
-      <p>&copy; Om Computer Maintenance</p>
-    </div>
-  </footer>
+  <?php include __DIR__ . "/partials/footer.php"; ?>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="/js/scripts.js"></script>
-  <script>
-    AOS.init({
-      duration: 2000
-    });
-  </script>
 </body>
 
 </html>

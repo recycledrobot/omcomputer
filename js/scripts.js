@@ -16,34 +16,42 @@ const initMobileMenu = () => {
   });
 };
 
-//tabs
-const tabs = document.querySelectorAll('.tabs li');
-const tabContentBoxes = document.querySelectorAll('#tab-content > div');
-tabs.forEach((tab)=>{
-  tab.addEventListener('click', () => {
-    tabs.forEach(item => item.classList.remove('is-active'))
-    tab.classList.add('is-active');
-    const target = tab.dataset.target;
-    console.log(target);
-    tabContentBoxes.forEach(box=>{
-      if(box.getAttribute('id')==target){
-        box.classList.remove('is-hidden');
-      }else{
-        box.classList.add('is-hidden');
-      }
-      });
+const initTabs = () => {
+  const tabs = document.querySelectorAll('.tabs li');
+  if (tabs) {
+    const tabContentBoxes = document.querySelectorAll('#tab-content > div');
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(item => item.classList.remove('is-active'))
+        tab.classList.add('is-active');
+        const target = tab.dataset.target;
+        console.log(target);
+        tabContentBoxes.forEach(box => {
+          if (box.getAttribute('id') == target) {
+            box.classList.remove('is-hidden');
+          } else {
+            box.classList.add('is-hidden');
+          }
+        });
 
+      })
     })
-})
-
-
-
+  }
+};
 const initForm = () => {
   if (document.querySelector("#dataForm")) {
-    console.log('found form');
+    console.log('Form found');
+
+    const fileInput = document.querySelector('.file-input');
+    fileInput.addEventListener('change', function(event) {
+      const fileName = event.target.files[0] ? event.target.files[0].name : 'No file chosen';
+      document.querySelector('.file-name').textContent = fileName;
+    });
+
     document.querySelector("#dataForm").addEventListener("submit", async function(e) {
       e.preventDefault(); // Prevent default form submission
-      console.log('processing form');
+      console.log('Processing form');
+
       const formData = new FormData(this); // Collect form data
 
       try {
@@ -53,16 +61,54 @@ const initForm = () => {
         });
 
         const result = await response.json(); // Parse JSON response
-        console.log(result.message); // Show success/error message
-        if (result.status == 'success') {
-          document.querySelector("#dataForm").reset()
+
+        // Display result to user
+        let messageElement = document.createElement('div');
+        messageElement.className = result.status === 'success' ? 'notification is-success' : 'notification is-danger';
+        messageElement.textContent = result.message;
+
+        // Assuming you have a container for messages
+        let messageContainer = document.querySelector('#message-container');
+        if (!messageContainer) {
+          messageContainer = document.createElement('div');
+          messageContainer.id = 'message-container';
+          document.body.insertBefore(messageContainer, document.querySelector("#dataForm"));
+        }
+        messageContainer.appendChild(messageElement);
+
+        // Clear previous messages after a short delay
+        setTimeout(() => {
+          messageContainer.innerHTML = '';
+        }, 5000); // Message will disappear after 5 seconds
+
+        if (result.status === 'success') {
+          // Reset form on success
+          this.reset();
         }
       } catch (error) {
         console.error("Error:", error);
+
+        // Display error to user if there's an issue with the fetch or JSON parsing
+        let messageElement = document.createElement('div');
+        messageElement.className = 'notification is-danger';
+        messageElement.textContent = "An error occurred while processing your request. Please try again.";
+
+        let messageContainer = document.querySelector('#message-container') || document.createElement('div');
+        if (!messageContainer.id) {
+          messageContainer.id = 'message-container';
+          document.body.insertBefore(messageContainer, document.querySelector("#dataForm"));
+        }
+        messageContainer.appendChild(messageElement);
+
+        // Clear error message after a short delay
+        setTimeout(() => {
+          messageContainer.innerHTML = '';
+        }, 5000); // Message will disappear after 5 seconds
       }
     });
   }
 }
+
 
 const initVideoPlaylist = () => {
   // Ensure the video player exists on the page before running the script
@@ -124,7 +170,12 @@ const initVideoPlaylist = () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  AOS.init({
+    duration: 1000
+  });
+
   initMobileMenu();
   initVideoPlaylist();
   initForm();
+  initTabs();
 });

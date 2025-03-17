@@ -1,0 +1,13 @@
+# Deny direct access to all files
+<FilesMatch ".*">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# But allow access from PHP scripts on your server
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteCond %{REQUEST_URI} !/submit.php$ [NC]
+    RewriteRule .* - [F]
+</IfModule>

@@ -19,12 +19,10 @@
   <meta name="twitter:description" content="OM Computer Maintenance offers top-notch IT support, repairs, and maintenance services for businesses and individuals. Reliable, affordable, and fast service.">
   <meta name="twitter:image" content="https://omcomputermaintenance.com.np/om.jpg">
 
-  <link rel="stylesheet" href="/omcomputer/css/bulma.min.css">
-  <link rel="stylesheet" href="/omcomputer/css/styles.css">
+  <link rel="stylesheet" href="/css/bulma.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 </head>
 
 <body class="has-navbar-fixed-top has-background-black-ter">
@@ -42,9 +40,10 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
 
-  <section class="section is-medium py-2">
+  <section class="section">
     <div class="container">
 
       <div class="content pb-2">
@@ -136,22 +135,14 @@
             </p>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
   </section>
 
-  <footer class="footer has-background-black">
-    <div class="content has-text-centered has-text-light mt-6">
-      <p>&copy; Om Computer Maintenance</p>
-    </div>
-  </footer>
+  <?php include __DIR__ . "/partials/footer.php"; ?>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="/js/scripts.js"></script>
-  <script>
-    AOS.init({
-      duration: 2000
-    });
-  </script>
 </body>
 
 </html>
